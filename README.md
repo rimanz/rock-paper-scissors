@@ -3,3 +3,4 @@ A simple implementation of the classic Rock Paper Scissors game in JavaScript. P
 
 ## Technologies:
  - JavaScript (ES6+)
+ - HTML5
