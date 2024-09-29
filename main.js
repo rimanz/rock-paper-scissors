@@ -1,11 +1,11 @@
+const choices = ["Rock", "Paper", "Scissors"];
+
 function getComputerChoice() {
-    let choices = ["Rock", "Paper", "Scissors"];
     let index = Math.floor(Math.random() * 3);
     return choices[index];
 }
 
 function getHumanChoice() {
-    let choices = ["Rock", "Paper", "Scissors"];
     let choice = prompt(`
         Please make choice:
             1. Rock
