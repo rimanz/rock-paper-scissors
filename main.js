@@ -7,7 +7,7 @@ function getComputerChoice() {
 
 function getHumanChoice(warning="") {
     let promptMsg = `
-        Please make choice:
+        Please keep your browser console open and make choice:
             1. Rock
             2. Paper
             3. Scissors
