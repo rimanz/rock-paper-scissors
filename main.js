@@ -64,6 +64,14 @@ function playGame() {
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
     }
+
+    if (humanScore > computerScore) {
+        console.log("-----You've WON the game!-----");
+    } else if (humanScore < computerScore) {
+        console.log("-----You've LOST the game!-----");
+    } else {
+        console.log("-----Game Ended with a Tie!-----");
+    }
 }
 
 
