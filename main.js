@@ -62,21 +62,17 @@ function playGame() {
     for (let i = 1; i <= 5; i++) {
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
-        console.log(`Round #${i}: \n`);
+        console.log(`\n   Round #${i}:`);
         playRound(humanSelection, computerSelection);
     }
 
     if (humanScore > computerScore) {
-        console.log("-----You've WON the game!-----");
+        console.log("\n----- WINNER -----\n");
     } else if (humanScore < computerScore) {
-        console.log("-----You've LOST the game!-----");
+        console.log("\n----- LOSER -----\n");
     } else {
-        console.log("-----Game Ended with a Tie!-----");
+        console.log("\n----- TIE -----\n");
     }
 }
 
-
-
-
-// Testing:
 playGame();
