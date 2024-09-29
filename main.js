@@ -32,6 +32,8 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
+    console.log(humanSelection, "\t", computerSelection);
+
     if (humanChoice == computerChoice) {
         console.log("Oh-ohh! It's a tie");
     } else if (humanChoice == "Rock" && computerChoice == "Paper") {
@@ -53,6 +55,7 @@ function playRound(humanChoice, computerChoice) {
         console.log("You win! Scissors cut Paper");
         humanScore++;
     }
+    console.log(humanScore, "\t", computerScore);
 }
 
 
@@ -62,6 +65,4 @@ function playRound(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-console.log(humanSelection, computerSelection);
 playRound(humanSelection, computerSelection);
-console.log(humanScore, computerScore);
