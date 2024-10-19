@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+        <div class="display">
+            <div class="player human">
+                <h2>Human</h2>
+                <div class="score">0</div>
+                <div class="choice"></div>
+            </div>
+
+            <div class="player computer">
+                <h2>Computer</h2>
+                <div class="score">0</div>
+                <div class="choice"></div>
+            </div>
+
+            <div class="message-box">
+                <p class="message">Let's see who is first to get <small class="score">5</small> !!</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy; Riman Das 2024</small>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
