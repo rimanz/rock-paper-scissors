@@ -1,3 +1,4 @@
+/* Imports and resets */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&display=swap');
 
 *, *::after, *::before {
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Genetic Styles */
 :root {
     font-family: "Audiowide", sans-serif;
     font-size: 18px;
@@ -22,12 +24,47 @@ body {
     gap: 20px;
 }
 
-h1 {
+button {
+    font-family: Bungee, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px silver, 0px 0px 3px 0px silver;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    flex-basis: 33.333%;
+    transition: color 0.7s ease;
+    transition: background-color 0.7s ease;
+}
+
+button.play-again {
+    font-family: Audiowide, sans-serif;
+    font-size: inherit;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    border: 1px solid silver;
+    box-shadow: 1px 2px 3px 1px silver, -1px -0px 3px 1px silver;
+}
+
+button:active {
+    box-shadow: 1px 2px 3px 1px silver inset, 0px 0px 3px 0px silver;
+}
+
+/* Style for header */
+header > h1 {
     font-family: Audiowide, sans-serif;
     font-size: 2rem;
     padding: 20px 0;
 }
 
+/* Style for main section */
 main {
     width: 80%;
     min-width: 360px;
@@ -112,39 +149,7 @@ main {
     padding: 8px 0;
 }
 
-button {
-    font-family: Bungee, sans-serif;
-    font-size: 1.3rem;
-    font-weight: 900;
-    color: inherit;
-    background-color: inherit;
-    border: 1px solid silver;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0px silver, 0px 0px 3px 0px silver;
-    padding: 4px 8px;
-    text-transform: uppercase;
-    flex-basis: 33.333%;
-    transition: color 0.7s ease;
-    transition: background-color 0.7s ease;
-}
-
-button.play-again {
-    font-family: Audiowide, sans-serif;
-    font-size: inherit;
-    margin-top: 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-button:hover {
-    border: 1px solid silver;
-    box-shadow: 1px 2px 3px 1px silver, -1px -0px 3px 1px silver;
-}
-
-button:active {
-    box-shadow: 1px 2px 3px 1px silver inset, 0px 0px 3px 0px silver;
-}
-
+/* Style for footer */
 footer {
     padding: 10px 0;
 }
